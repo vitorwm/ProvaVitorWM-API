@@ -1,0 +1,33 @@
+### Cadastrar livro
+POST http://localhost:2020/livro/cadastrar
+Content-Type: application/json
+
+{
+    "nome" : "Teste 2",
+    "isbn" : "658",
+    "preco" : 200
+}
+
+
+
+### LISTAR livro
+GET http://localhost:2020/livro/listar/
+
+### Listar livro por ISBN
+GET http://localhost:2020/livro/buscar/isbn/123456789
+
+
+
+
+### Alterar livro
+PUT http://localhost:2020/livro/alterar/60d5c2b5e26e5614a896b524
+Content-Type: application/json
+
+{
+    "nome" : "Livro5",
+    "isbn" : "isbn3",
+    "preco" : 5000
+}
+
+### Deletar livro
+DELETE  http://localhost:1234/livro/remover/60d5c2b5e26e5614a896b524
